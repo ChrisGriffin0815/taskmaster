@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <title>taskmaster</title>
+</head>
+
+<body>
+    <header>
+        <nav class="row  justify-content-around navbar navbar-dark  bg-dark text-light">
+            <div class="col-3">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
+                    <span class="ml-2">taskmaster</span>
+                </a>
+            </div>
+
+
+
+            <div class="col-7">
+                <form onsubmit="app.listController.create(event)" id="addListForm">
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="listName" placeholder="List Name">
+                        <button class="btn input-group-addon btn-success" type="submit">Create</button>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <main>
+        <div class="row">
+
+
+        </div>
+
+
+        <div class="row ml-1 p-3 justify-content-start" id="list">
+
+        </div>
+
+
+        <div id="app"></div>
+    </main>
+    <footer class="container-fluid bg-dark text-light">
+        <div class="row text-center">
+            <div class="col">
+                <p><small>Made with love by Codeworks</small></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="app/main.js" type="module"></script>
+</body>
+
+
+
+
+
+
+
+</html>
